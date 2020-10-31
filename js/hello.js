@@ -4,3 +4,5 @@ function say () {
     console .log( 'say', msg );
     document .getElementById( 'app' ) .innerText = msg;
 }
+
+export default say;

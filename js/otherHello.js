@@ -1,4 +1,4 @@
-function say () {
+export default function say () {
     const msg = 'Aquí vamos';
 
     console .log( 'say', msg );
