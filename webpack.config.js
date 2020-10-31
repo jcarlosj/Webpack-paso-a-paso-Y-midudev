@@ -4,6 +4,7 @@ const
 
 /** Configuracion usando un Objeto */
 module .exports = {
+    entry: './src/js',
     output: {
         filename: 'app.[contenthash].js'        //  Crea un contenthast al nombre del archivo para evitar tener problemas de cache
     },
@@ -15,5 +16,8 @@ module .exports = {
             title: 'Webpack paso a paso!',
             template: './src/index.html'
         })
-    ]
+    ],
+    devServer: {
+        open: true
+    }
 }
