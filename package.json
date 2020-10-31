@@ -1,0 +1,18 @@
+{
+  "name": "learning-webpack",
+  "version": "1.0.0",
+  "description": "Learning Webpack",
+  "main": "index.js",
+  "scripts": {
+    "start": "servor ./ index.html 8082 --reload --browse"
+  },
+  "keywords": [
+    "webpack",
+    "javascript"
+  ],
+  "author": "Juan Carlos Jiménez Gutiérrez <jcjimenez29@misena.edu.co>",
+  "license": "ISC",
+  "devDependencies": {
+    "servor": "^4.0.2"
+  }
+}
