@@ -4,7 +4,8 @@
   "description": "Learning Webpack",
   "main": "index.js",
   "scripts": {
-    "start": "servor ./ index.html 8082 --reload --browse"
+    "start": "servor ./dist index.html 8082 --reload --browse",
+    "build": "webpack ./src/js"
   },
   "keywords": [
     "webpack",
@@ -13,6 +14,8 @@
   "author": "Juan Carlos Jiménez Gutiérrez <jcjimenez29@misena.edu.co>",
   "license": "ISC",
   "devDependencies": {
-    "servor": "^4.0.2"
+    "servor": "^4.0.2",
+    "webpack": "^5.3.2",
+    "webpack-cli": "^4.1.0"
   }
 }
