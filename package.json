@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "servor ./dist index.html 8082 --reload --browse",
-    "build": "webpack ./src/js"
+    "build": "webpack ./src/js --mode production",
+    "dev": "webpack ./src/js --mode development --watch"
   },
   "keywords": [
     "webpack",
