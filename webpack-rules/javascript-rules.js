@@ -4,7 +4,10 @@ module .exports = {
     use: {
         loader: 'babel-loader',
         options: {
-            presets: [ '@babel/preset-react' ],
+            presets: [ 
+                '@babel/preset-env',
+                '@babel/preset-react' 
+            ],
             plugins: [ 
                 /** Dos opciones de plugins para hacer uso del Optional Chaining Operator en nuestro codigo */
                 //'@babel/plugin-syntax-optional-chaining',     //  Plugin que dara soporte a la caracteristica nueva sin modificarla
