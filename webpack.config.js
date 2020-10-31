@@ -11,6 +11,9 @@ module .exports = {
         rules: [ javaScriptRules ]
     },
     plugins: [
-        new HtmlWebpackPlugin()
+        new HtmlWebpackPlugin({
+            title: 'Webpack paso a paso!',
+            template: './src/index.html'
+        })
     ]
 }
