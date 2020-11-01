@@ -1,0 +1,21 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+    font: 100% $font-stack;
+
+    h1 {
+        color: $primary-color;
+        padding: 1rem;
+    }
+    h2 {
+        padding: .5rem 1rem;
+    }
+
+    h1, h2 {
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 100%;
+    }
+
+}

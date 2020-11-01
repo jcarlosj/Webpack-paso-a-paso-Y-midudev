@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+/* CSS */
+import '../sass/main.scss';
+
 const Persona = { name: 'Juan' };
 Persona ?.age;              //  Optional Chaining Operator (Comprueba si existe la propiedad en el objeto)
 Persona && Persona .age;    //  Similar a Optional Chaining Operator

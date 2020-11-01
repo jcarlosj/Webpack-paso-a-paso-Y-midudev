@@ -1,6 +1,7 @@
 const 
     HtmlWebpackPlugin = require( 'html-webpack-plugin' ),
-    javaScriptRules = require( './webpack-rules/javascript-rules' );
+    javaScriptRules = require( './webpack-rules/javascript-rules' ),
+    sassRules = require( './webpack-rules/sass-rules' );
 
 /** Configuracion usando un Objeto */
 module .exports = {
@@ -9,7 +10,10 @@ module .exports = {
         filename: 'app.[contenthash].js'        //  Crea un contenthast al nombre del archivo para evitar tener problemas de cache
     },
     module: {
-        rules: [ javaScriptRules ]
+        rules: [ 
+            javaScriptRules, 
+            sassRules
+        ]
     },
     plugins: [
         new HtmlWebpackPlugin({
